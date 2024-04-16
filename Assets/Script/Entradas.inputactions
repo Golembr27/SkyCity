@@ -1,0 +1,54 @@
+{
+    "name": "Entradas",
+    "maps": [
+        {
+            "name": "Jogador",
+            "id": "59ea2ff4-f9d8-4dfe-a7b6-f727a7fb2d47",
+            "actions": [
+                {
+                    "name": "Mover",
+                    "type": "Value",
+                    "id": "86f48d60-e1ee-42f9-ad68-3cc13bfa9711",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "7cc791f8-7b35-4191-8bd8-b67480a80dcf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "eeaae7ae-90bd-4b55-9f0c-93c2dc555bfe",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mover",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27c687e0-788e-40dc-b35f-a3a830067063",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

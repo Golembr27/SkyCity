@@ -15,10 +15,15 @@ public class MovintoPlayer : MonoBehaviour
 
     void Update()
     {
+        
+    }
+
+    void Movimentação()
+    {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector2 movimentacao = new Vector2 (horizontal, vertical);
-        transform.Translate (movimentacao * velocidadeAndar * Time.deltaTime);
+        Vector2 movimentacao = new Vector2(horizontal, vertical);
+        transform.Translate(movimentacao * velocidadeAndar * Time.deltaTime);
     }
 }
