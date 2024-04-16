@@ -16,9 +16,15 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void Awake()
+    {
         if (Input.GetKey(KeyCode.Z))
         {
             dia?.OpenDialog(pages);
         }
     }
+
 }

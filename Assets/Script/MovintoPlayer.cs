@@ -19,6 +19,6 @@ public class MovintoPlayer : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         Vector2 movimentacao = new Vector2 (horizontal, vertical);
-        transform.position = movimentacao * velocidadeAndar * Time.deltaTime;
+        transform.Translate (movimentacao * velocidadeAndar * Time.deltaTime);
     }
 }

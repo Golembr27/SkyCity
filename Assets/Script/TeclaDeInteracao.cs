@@ -6,7 +6,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 public class TeclaDeInteracao : MonoBehaviour
 {
     // Variável para controlar se o jogador está dentro do alcance da placa
-    private bool jogadorPerto = false;
+    public int jogadorPerto = 0;
 
     // Referência para o objeto de diálogo
     public GameObject dialogo;
@@ -22,7 +22,7 @@ public class TeclaDeInteracao : MonoBehaviour
     void Update()
     {
         // Verificar se o jogador está perto e pressionou a tecla de interação
-        if (jogadorPerto == true && Input.GetKeyDown(teclaDeInteracao))
+        if (jogadorPerto == 0 && Input.GetKeyDown(teclaDeInteracao))
         {
             // Exibir o diálogo
             dialogo.SetActive(true);
@@ -32,14 +32,14 @@ public class TeclaDeInteracao : MonoBehaviour
     // Este método é chamado quando o jogador entra no collider da placa
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        jogadorPerto = true;
+        jogadorPerto = 1;
         Debug.Log("Colidiu");
     }
 
     // Este método é chamado quando o jogador sai do collider da placa
     private void OnTriggerExit2D(Collider2D collision)
     {
-        jogadorPerto = false;
+        jogadorPerto = 0;
         Debug.Log("Saio Da Colisão");
     }
 }
