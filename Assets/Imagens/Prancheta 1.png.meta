@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Prancheta 1_0: -8907350871511382103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

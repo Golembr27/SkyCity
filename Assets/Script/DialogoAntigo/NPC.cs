@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    [SerializeField] DialogoController dia; 
+    [SerializeField] DialogoController dia;
     [TextArea(5, 8)]
     [SerializeField] string[] pages;
     // Start is called before the first frame update

@@ -8,8 +8,7 @@ public class MovintoPlayer : MonoBehaviour
     public FixedJoystick moveJoystick;
     // velocidade que o personage que vai andar
     float velocidadeAndar = 5f;
-    float horizontal;
-    float vertical;
+
 
     private void Start()
     {
@@ -18,15 +17,17 @@ public class MovintoPlayer : MonoBehaviour
 
     void Update()
     {
-        
+        Movimentação();
     }
 
     void Movimentação()
     {
-        horizontal = moveJoystick.Horizontal;
-        vertical = moveJoystick.Vertical;
+        float horizontal = moveJoystick.Horizontal;
+        float vertical = moveJoystick.Vertical;
 
-        Vector3 movimentacao = new Vector3(horizontal,0, vertical);
+        Vector2 movimentacao = new Vector2(horizontal, vertical);
         transform.Translate(movimentacao * velocidadeAndar * Time.deltaTime);
     }
+
+
 }

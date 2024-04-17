@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a3e42c58f9c666b4bbbd05911a4d7a92
+guid: 07abf98a363e22d4fbeebcd819928670
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2725881164364017826
-    second: Prancheta 2_0
+      213: -5551407708394448947
+    second: Prancheta 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prancheta 2_0
+      name: Prancheta 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5f872af589bb2ad0800000000000000
-      internalID: -2725881164364017826
+      spriteID: dc798c11a1075f2b0800000000000000
+      internalID: -5551407708394448947
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Prancheta 2_0: -2725881164364017826
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
