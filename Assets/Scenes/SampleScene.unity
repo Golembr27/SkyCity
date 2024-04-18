@@ -1108,11 +1108,9 @@ MonoBehaviour:
   teclaDeInteracao: 0
   profile: {fileID: 4969131362173423726, guid: f933a99b310018d4d85b394ad8233d23, type: 3}
   speechTxt:
-  - asdfs
-  - dsdg
-  - sdfsdv
-  - sds
-  - sd
+  - "Ol\xE1"
+  - "Amigo vc nao deveria est\xE1 aqui"
+  - Adeus.
   actorName: Enrico
 --- !u!1 &1524296777
 GameObject:
