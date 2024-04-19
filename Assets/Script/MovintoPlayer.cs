@@ -5,18 +5,14 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class MovintoPlayer : MonoBehaviour
 {
+    //Detectar o JoyStick
     public FixedJoystick moveJoystick;
     // velocidade que o personage que vai andar
     float velocidadeAndar = 5f;
 
-
-    private void Start()
-    {
-
-    }
-
     void Update()
     {
+        //Chamar toda hora a funcao movimentacao
         Movimentação();
     }
 

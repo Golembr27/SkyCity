@@ -7,7 +7,8 @@ public class DialogueController : MonoBehaviour
 {
     // Variável para controlar se o jogador está dentro do alcance da placa
     public int jogadorPerto = 0;
-
+    // Variavel aparecer o botão para interagir
+    public GameObject botaoAparecer;
     // Tecla para interagir
     public KeyCode teclaDeInteracao = KeyCode.E;
     // sprite do npc
@@ -25,17 +26,17 @@ public class DialogueController : MonoBehaviour
         dc = GameObject.FindObjectOfType<Dialogue>();
         //se clicar E vai abrir o dialogo
         teclaDeInteracao = KeyCode.E;
+        botaoAparecer.SetActive(false);
     }
-
-
-    void Update()
+    
+    public void AceionarODialogo()
     {
-        if (jogadorPerto == 1 && Input.GetKeyDown(teclaDeInteracao))
+        if (jogadorPerto == 1)
         {
             // Exibir o diálogo
             dc.Speech(profile, speechTxt, actorName);
         }
-    }
+    } 
 
     void interacao()
     {
@@ -52,6 +53,7 @@ public class DialogueController : MonoBehaviour
     {
         //JogadorPerto True
         jogadorPerto = 1;
+        botaoAparecer.SetActive(true);
     }
 
     // Este método é chamado quando o jogador sai do collider da placa
@@ -59,5 +61,6 @@ public class DialogueController : MonoBehaviour
     {
         //JogadorPerto False
         jogadorPerto = 0;
+        botaoAparecer.SetActive(false);
     }
 }
